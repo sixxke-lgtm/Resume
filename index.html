@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Phathadon Meemeng</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">RESUME</div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section id="home" class="resume-container">
+    <img src="Mao.jpg" alt="Profile">
+    <h1>Phathadon Meemeng</h1>
+    <em>Department of Digital and Information Technology</em>
+    <em><br>Faculty of Engineering and Technology</em><br>
+    <a href="http://pim.ac.th">Panyapiwat Institute of Management</a>
+  </section>
+  <hr>
+
+  <section id="about" class="resume-section">
+    <h2 class="text-border">About Me</h2>
+    <em><p>Name: KaoMao, born in Prachinburi Province, Mueang District</p></em>
+  </section>
+
+  <section id="education" class="resume-section">
+    <h2 class="text-border">Education</h2>
+    <em><p>October 2025- PRESENT
+<br>PANYAPIWAT INSTITUTE OF MANAGEMENT
+<br>Faculty of Engineering and Technology
+<br>Major :Digital and Information Technology
+<br>GPAX : 2.43</p></em>
+  </section>
+
+  <section id="skills" class="resume-section">
+    <h2 class="text-border">Skills</h2>
+    <em><p>HTML / CSS
+      <br>3D Modeling (Blender)
+      <br>UV Mapping & Texturing
+      <br>UV Unwrap / Retopology
+      <br>Graphic Design
+      <br>Character & Outfit Design (Roblox)
+      <br>Rigging (Basic)
+      <br>Adobe Photoshop
+      <br>Canva
+    </p></em>
+  </section>
+
+  <section id="contact" class="resume-section">
+    <h2 class="text-border">Contact</h2>
+    <em><p>facebook<a href="https://www.facebook.com/KaMaO.zzz/">KaMao Skrc</a>
+      <br>GitHub<a href="https://github.com/sixxke-lgtm?tab=repositories">GitHub</a>
+    </p>
+    Email Kama@gmail.com
+    <br>phone 0777777777</em>
+  </section>
+
+  <!-- ✅ Toggle Menu Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
+</body>
+
+</html>
