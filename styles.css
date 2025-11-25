@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    color: #333; 
-    background-color: #f8f8f8;
+    color: #333;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -16,15 +16,15 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     overflow: hidden;
 }
 
-.navbar {
+.top-bar {
     background-color: #2c3e50;
     color: #fff;
     padding: 15px 30px;
@@ -34,225 +34,178 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-.navbar .logo {
-    font-size: 1.8em;
+.top-bar .header-name {
+    font-size: 1.4em;
     font-weight: 700;
 }
 
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar nav ul li {
-    margin-left: 30px;
-}
-
-.navbar nav ul li a {
+.top-bar .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.3s ease;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar nav ul li a:hover {
-    color: #e67e22; 
+.top-bar .nav-links a:hover {
+    background-color: #e67e22;
 }
 
-
-.resume-content {
+.resume-content-v2 {
     display: flex;
-    flex-wrap: wrap; 
 }
 
+.left-column-v2 {
+    flex: 1;
+    background-color: #fcfcfc;
+    padding: 30px 25px;
+    border-right: 1px solid #eee;
+}
 
-.left-column {
-    flex: 1; 
-    min-width: 280px; 
-    background-color: #ecf0f1; 
-    padding: 40px 25px;
+.profile-section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
     text-align: center;
-    border-right: 1px solid #ddd;
 }
 
 .profile-section .profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #bdc3c7; 
-    margin-bottom: 25px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border: 3px solid #e67e22;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-section h1 {
+.profile-section .main-name {
     font-family: 'Merriweather', serif;
-    font-size: 2.2em;
-    color: #2c3e50; 
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #2c3e50;
     line-height: 1.2;
+    margin-bottom: 5px;
 }
 
 .profile-section .title-details {
-    font-size: 1.05em;
-    color: #555;
-    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #666;
 }
 
-.profile-section .title-details a {
-    color: #e67e22; 
-    text-decoration: none;
-    font-weight: 600;
+.contact-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
-.profile-section .title-details a:hover {
+.contact-section p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 8px;
+}
+.contact-section p a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.contact-section p a:hover {
     text-decoration: underline;
 }
 
-
-.right-column {
-    flex: 2.5; 
-    padding: 40px 30px;
+.right-column-v2 {
+    flex: 2;
+    padding: 30px;
 }
 
 .section-block {
-    margin-bottom: 35px;
-    border-bottom: 1px solid #eee; 
-    padding-bottom: 25px;
-}
-
-.section-block:last-child {
-    border-bottom: none; 
-    padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .section-block h2 {
     font-family: 'Merriweather', serif;
-    font-size: 1.8em;
-    color: #2c3e50; 
-    margin-bottom: 20px;
-    position: relative;
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22;
     padding-bottom: 5px;
 }
 
-.section-block h2::after { 
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #e67e22; 
-}
-
 .section-block p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #444;
-}
-
-.education-item {
-    margin-bottom: 20px;
+    font-size: 0.95em;
 }
 
 .education-item h3 {
-    font-size: 1.2em;
-    color: #34495e;
-    margin-bottom: 5px;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 3px;
 }
 
 .education-item .university-name {
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 5px;
+    font-size: 1.1em;
+    margin-bottom: 3px;
+}
+
+.skills-highlight {
+    background-color: #f7d2b2;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.skills-highlight h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
 }
 
 .skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    list-style: disc;
+    list-style-position: inside;
+    color: #333;
+    padding-left: 0;
+    display: block;
+    column-count: 2;
+    column-gap: 20px;
 }
 
 .skills-list li {
-    background-color: #e67e22; 
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 5px;
+    margin-bottom: 8px;
     font-size: 0.95em;
     font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.skills-list li:hover {
-    background-color: #d35400;
-}
-
-.section-block#contact p {
-    margin-bottom: 8px;
-}
-.section-block#contact p a {
-    color: #e67e22;
-    text-decoration: none;
-}
-.section-block#contact p a:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    .top-bar {
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 10px;
     }
-    .navbar nav ul {
-        margin-top: 15px;
-        flex-wrap: wrap;
+    .top-bar .nav-links {
+        margin-top: 10px;
     }
-    .navbar nav ul li {
+    .top-bar .nav-links a {
         margin-left: 0;
-        margin-right: 20px;
-        margin-bottom: 10px;
+        margin-right: 15px;
     }
 
-    .resume-content {
+    .resume-content-v2 {
         flex-direction: column;
     }
 
-    .left-column {
+    .left-column-v2 {
         border-right: none;
         border-bottom: 1px solid #ddd;
-        padding-bottom: 30px;
     }
-
-    .right-column {
-        padding: 30px 25px;
+    .right-column-v2 {
+        padding: 25px;
     }
-
-    .section-block {
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-    }
-    .section-block h2 {
-        font-size: 1.6em;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    .profile-section h1 {
-        font-size: 1.8em;
-    }
-    .profile-section .title-details {
-        font-size: 0.95em;
-    }
-    .navbar .logo {
-        font-size: 1.5em;
-    }
-    .navbar nav ul li {
-        font-size: 0.9em;
-        margin-bottom: 5px;
+    
+    .skills-list {
+        column-count: 1;
     }
 }
