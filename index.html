@@ -8,74 +8,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="resume-wrapper">
-        <aside class="left-sidebar">
-            <div class="profile-pic-container">
-                <img src="Mao.jpg" alt="Phathadon Meemeng Profile Picture" class="profile-pic-two-column">
+    
+    <header class="navbar-minimal">
+        <div class="logo-name">RESUME</div>
+        <nav class="nav-links-container">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <div class="container-minimal">
+        <div class="profile-header-minimal">
+            <img src="Mao.jpg" alt="Phathadon Meemeng Profile Picture" class="profile-pic-minimal">
+            <h1>Phathadon Meemeng</h1>
+            <p class="description">
+                Department of Digital and Information Technology<br>
+                Faculty of Engineering and Technology<br>
+                Panyapiwat Institute of Management
+            </p>
+        </div>
+
+        <section class="section-block-minimal">
+            <h2 class="section-title-minimal" id="about">About Me</h2>
+            <p class="summary-statement">
+                Name: KaoMao, born in Prachinburi Province, Mueang District
+            </p>
+            <p class="summary-statement">
+                I am a student with a strong passion for 3D Modeling and Graphic Design. I am highly detail-oriented in asset creation, texturing, and maintaining high visual quality standards.
+                I also possess foundational experience and am ready to apply both my technical skills and creativity in a professional and dynamic work environment.
+            </p>
+        </section>
+
+        <section class="section-block-minimal">
+            <h2 class="section-title-minimal" id="education">Education</h2>
+            <div class="education-item">
+                <p class="education-date">JUNE 2024 - PRESENT</p>
+                <h3 class="degree-title">PANYAPIWAT INSTITUTE OF MANAGEMENT</h3>
+                <p class="major-gpa">Faculty of Engineering and Technology</p>
+                <p class="major-gpa">Major: Digital and Information Technology</p>
+                <p class="major-gpa">GPAX: 2.43</p>
             </div>
-            <div class="profile-info-two-column">
-                <h1>Phathadon Meemeng</h1>
-                <p class="position-title">Department of Digital and Information Technology</p>
-                <p class="company-name">Faculty of Engineering and Technology</p>
-                <p class="institute-name">Panyapiwat Institute of Management</p>
-            </div>
+        </section>
 
-            <div class="contact-links-section">
-                <h2 class="section-title-sidebar">Contact & Links</h2>
-                <p>Facebook: <a href="https://www.facebook.com/KaMao.Skrc" target="_blank">KaMao Skrc</a></p>
-                <p>GitHub: <a href="https://github.com/sixxke-lgtm_github" target="_blank">GitHub</a></p>
-                <p>Email: Kama@gmail.com</p>
-                <p>Phone: 0777777777</p>
-            </div>
-        </aside>
+        <section class="section-block-minimal skills-block">
+            <h2 class="section-title-minimal" id="skills">Skills</h2>
+            <ul class="skills-list-one-column">
+                <li>Blender</li>
+                <li>3D Modeling (Blender)</li>
+                <li>UV Mapping & Texturing</li>
+                <li>UV Unwrap / Retopology</li>
+                <li>Graphic Design</li>
+                <li>Character & Outfit Design (Roblox)</li>
+                <li>Rigging (Basic)</li>
+                <li>Adobe Photoshop</li>
+                <li>Canva</li>
+            </ul>
+        </section>
 
-        <main class="main-content">
-            <section class="content-block">
-                <h2 class="section-title-main">About Me</h2>
-                <p class="section-text">
-                    Name: KaoMao, born in Prachinburi Province, Mueang District
-                </p>
-                <p class="section-text">
-                    I am a student with a strong passion for 3D Modeling and Graphic Design. I am highly detail-oriented in asset creation, texturing, and maintaining high visual quality standards.
-                    I also possess foundational experience and am ready to apply both my technical skills and creativity in a professional and dynamic work environment.
-                </p>
-            </section>
-
-            <section class="content-block">
-                <h2 class="section-title-main">Education</h2>
-                <div class="education-item">
-                    <p class="education-date">JUNE 2024 - PRESENT</p>
-                    <h3 class="degree-title">PANYAPIWAT INSTITUTE OF MANAGEMENT</h3>
-                    <p class="major-gpa">Faculty of Engineering and Technology</p>
-                    <p class="major-gpa">Major: Digital and Information Technology</p>
-                    <p class="major-gpa">GPAX: 2.43</p>
-                </div>
-            </section>
-
-            <section class="content-block skills-block">
-                <h2 class="section-title-main">Skills</h2>
-                <ul class="skills-list-two-column">
-                    <li>Blender</li>
-                    <li>3D Modeling (Blender)</li>
-                    <li>UV Mapping & Texturing</li>
-                    <li>UV Unwrap / Retopology</li>
-                    <li>Graphic Design</li>
-                    <li>Character & Outfit Design (Roblox)</li>
-                    <li>Rigging (Basic)</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Canva</li>
-                </ul>
-            </section>
-
-            <section class="content-block">
-                <h2 class="section-title-main">Employment History</h2>
-                <div class="employment-item">
-                    <p class="employment-date">2025</p>
-                    <p class="employment-place">7-11</p>
-                </div>
-            </section>
-        </main>
+        <section class="section-block-minimal">
+            <h2 class="section-title-minimal" id="contact">Contact & Links</h2>
+            <p>Facebook: <a href="https://www.facebook.com/KaMao.Skrc" target="_blank">KaMao Skrc</a></p>
+            <p>GitHub: <a href="https://github.com/sixxke-lgtm_github" target="_blank">GitHub</a></p>
+            <p>Email: <a href="mailto:Kama@gmail.com">Kama@gmail.com</a></p>
+            <p>Phone: 0777777777</p>
+        </section>
     </div>
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinksContainer = document.querySelector('.nav-links-container');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        menuToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
-
