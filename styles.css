@@ -8,7 +8,7 @@ body {
     font-family: 'Prompt', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: #f0f4f8; 
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -20,20 +20,21 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #34495e;
+    background-color: #2c3e50; 
     color: #fff;
     padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 }
 
 .logo-name {
-    font-size: 1.4em;
-    font-weight: 600;
-    color: #f8f8f8;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid #e67e22;
 }
 
 .nav-list {
@@ -49,14 +50,16 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: #2c3e50;
-    color: #e67e22;
+    background-color: #e67e22; 
+    color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-toggle {
@@ -69,103 +72,124 @@ body {
 }
 
 .container-minimal {
-    max-width: 800px;
+    max-width: 900px; 
     width: 100%;
     background-color: #ffffff;
     padding: 50px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
     text-align: left;
 }
 
 .profile-header-minimal {
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 3px solid #e67e22; 
     text-align: center;
 }
 
 .profile-pic-minimal {
-    width: 160px;
-    height: 160px;
+    width: 180px; 
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 25px;
-    border: 4px solid #34495e;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 6px solid #e67e22; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic-minimal:hover {
+    transform: scale(1.05); 
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 3em;
     color: #2c3e50;
     margin-bottom: 8px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .description {
-    font-size: 1.05em;
+    font-size: 1.1em;
     color: #555;
     margin-bottom: 15px;
     line-height: 1.8;
 }
 
-/* เพิ่มสไตล์สำหรับ em (สาขา) */
 .description em {
-    font-style: normal;
+    font-style: italic;
     font-weight: 600;
-    color: #e67e22; /* ใช้สีส้มอิฐเน้นสาขา */
+    color: #2c3e50; 
 }
 
-/* สไตล์สำหรับลิ้งค์ PIM */
 .description .pim-link {
-    color: #34495e;
+    color: #e67e22;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 .description .pim-link:hover {
-    color: #e67e22;
+    color: #d35400;
     text-decoration: underline;
 }
 
 .section-title-minimal {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #2c3e50;
     margin-top: 40px;
     margin-bottom: 25px;
     font-weight: 700;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e67e22;
-    display: inline-block;
-    letter-spacing: 0.5px;
+    border-bottom: 4px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    display: block; 
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-top: 10px;
 }
 
 .section-block-minimal {
     margin-bottom: 40px;
-    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
+.section-block-minimal:hover {
+    background-color: #fcfcfc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
 .summary-statement {
-    font-size: 1em;
-    line-height: 1.7;
-    margin-bottom: 10px;
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 15px;
     color: #444;
 }
 
-.education-item {
+.education-item, .employment-item {
+    padding: 15px;
+    border-left: 5px solid #e67e22; 
     margin-bottom: 25px;
+    background-color: #fffaf5;
+    border-radius: 4px;
 }
 
-.education-date {
+.education-date, .employment-date {
     font-size: 0.9em;
     color: #888;
     margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.degree-title {
-    font-size: 1.3em;
-    font-weight: 600;
+.degree-title, .employment-place {
+    font-size: 1.4em;
+    font-weight: 700;
     color: #2c3e50;
     margin-bottom: 5px;
 }
@@ -177,16 +201,17 @@ h1 {
 }
 
 .skills-block {
-    background-color: #fcf0e3;
+    background-color: #f5f8fb; 
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .skills-list-one-column {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 25px;
     margin-top: 20px;
     text-align: left;
 }
@@ -195,47 +220,70 @@ h1 {
     font-size: 1em;
     color: #333;
     font-weight: 500;
-    padding-left: 15px;
-    position: relative;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
 }
 
 .skills-list-one-column li::before {
-    content: '•';
+    content: '●'; 
     color: #e67e22;
     font-weight: bold;
     display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    width: 1.2em;
+    margin-left: -1.2em;
+    font-size: 0.8em;
 }
 
-/* Contact & Links Section Styles */
 .contact-list {
-    font-size: 1em;
+    list-style-type: none; 
+    font-size: 1.05em;
     color: #444;
-    line-height: 1.8;
-    margin-left: 20px;
+    line-height: 2;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .contact-list li {
     margin-bottom: 5px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.contact-list li:nth-child(1)::before { content: '🌐'; } 
+.contact-list li:nth-child(2)::before { content: '⚙️'; } 
+.contact-list li:nth-child(3)::before { content: '✉️'; } 
+.contact-list li:nth-child(4)::before { content: '📞'; } 
+.contact-list li:nth-child(5)::before { content: '🏠'; } 
+
+.contact-list li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
 }
 
 .contact-list li a {
-    color: #e67e22;
+    color: #2c3e50;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 .contact-list li a:hover {
-    color: #d35400;
+    color: #e67e22;
     text-decoration: underline;
 }
 
-/* การจำลองรูปภาพแทน @ */
 .at-symbol {
     font-weight: bold;
     color: #e67e22;
     font-size: 1.2em;
+}
+
+@media (max-width: 900px) {
+    .skills-list-one-column {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
 @media (max-width: 768px) {
@@ -252,7 +300,7 @@ h1 {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #34495e;
+        background-color: #2c3e50;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 900;
         padding-bottom: 10px;
@@ -278,7 +326,7 @@ h1 {
         display: block;
         width: 100%;
         padding: 10px 0;
-        border-bottom: 1px solid #2c3e50;
+        border-bottom: 1px solid #34495e;
     }
 
     body {
@@ -289,20 +337,21 @@ h1 {
         padding: 30px;
     }
     h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
     .section-title-minimal {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     .profile-pic-minimal {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
     }
     .skills-list-one-column {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
     .contact-list {
         margin-left: 0;
+        padding-left: 0;
     }
 }
 
@@ -312,10 +361,10 @@ h1 {
         border-radius: 5px;
     }
     h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
     .section-title-minimal {
-        font-size: 1.3em;
+        font-size: 1.5em;
         margin-top: 30px;
         margin-bottom: 20px;
     }
@@ -324,7 +373,7 @@ h1 {
         height: 100px;
     }
     .description, .summary-statement, .contact-list li {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
     .skills-block {
         padding: 20px 15px;
