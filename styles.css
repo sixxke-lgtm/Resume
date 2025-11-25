@@ -110,14 +110,22 @@ h1 {
     line-height: 1.8;
 }
 
-.description a {
-    color: #e67e22;
+/* เพิ่มสไตล์สำหรับ em (สาขา) */
+.description em {
+    font-style: normal;
+    font-weight: 600;
+    color: #e67e22; /* ใช้สีส้มอิฐเน้นสาขา */
+}
+
+/* สไตล์สำหรับลิ้งค์ PIM */
+.description .pim-link {
+    color: #34495e;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-.description a:hover {
-    color: #d35400;
+.description .pim-link:hover {
+    color: #e67e22;
     text-decoration: underline;
 }
 
@@ -130,4 +138,195 @@ h1 {
     padding-bottom: 10px;
     border-bottom: 2px solid #e67e22;
     display: inline-block;
-    letter-
+    letter-spacing: 0.5px;
+}
+
+.section-block-minimal {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.summary-statement {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.education-item {
+    margin-bottom: 25px;
+}
+
+.education-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.degree-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.major-gpa {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.skills-block {
+    background-color: #fcf0e3;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.skills-list-one-column {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.skills-list-one-column li {
+    font-size: 1em;
+    color: #333;
+    font-weight: 500;
+    padding-left: 15px;
+    position: relative;
+}
+
+.skills-list-one-column li::before {
+    content: '•';
+    color: #e67e22;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Contact & Links Section Styles */
+.contact-list {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+.contact-list li a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.contact-list li a:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+/* การจำลองรูปภาพแทน @ */
+.at-symbol {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .navbar-minimal {
+        padding: 10px 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links-container {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #34495e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 900;
+        padding-bottom: 10px;
+    }
+    
+    .nav-links-container.active {
+        display: block;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-list li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 20px;
+    }
+    
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #2c3e50;
+    }
+
+    body {
+        padding: 15px;
+        padding-top: 70px;
+    }
+    .container-minimal {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    .section-title-minimal {
+        font-size: 1.5em;
+    }
+    .profile-pic-minimal {
+        width: 130px;
+        height: 130px;
+    }
+    .skills-list-one-column {
+        grid-template-columns: 1fr;
+    }
+    .contact-list {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-minimal {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .section-title-minimal {
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .profile-pic-minimal {
+        width: 100px;
+        height: 100px;
+    }
+    .description, .summary-statement, .contact-list li {
+        font-size: 0.9em;
+    }
+    .skills-block {
+        padding: 20px 15px;
+    }
+}
