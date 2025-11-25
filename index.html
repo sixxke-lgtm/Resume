@@ -1,88 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Phathadon Meemeng</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phathadon Meemeng - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">RESUME</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main class="resume-content">
+            <aside class="left-column">
+                <div class="profile-section">
+                    <img src="Mao.jpg" alt="Profile Picture of Phathadon Meemeng" class="profile-pic">
+                    <h1>Phathadon Meemeng</h1>
+                    <p class="title-details">Department of Digital and Information Technology<br>Faculty of Engineering and Technology<br><a href="https://www.pim.ac.th/" target="_blank">Panyapiwat Institute of Management</a></p>
+                </div>
+            </aside>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">RESUME</div>
-      <ul class="nav-links" id="navMenu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">☰</div>
-    </nav>
-  </header>
+            <section class="right-column">
+                <section id="about" class="section-block">
+                    <h2>About Me</h2>
+                    <p>Name: KaoMao, born in Prachinburi Province, Mueang District</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </section>
 
-  <section id="home" class="resume-container">
-    <img src="Mao.jpg" alt="Profile">
-    <h1>Phathadon Meemeng</h1>
-    <em>Department of Digital and Information Technology</em>
-    <em><br>Faculty of Engineering and Technology</em><br>
-    <a href="http://pim.ac.th">Panyapiwat Institute of Management</a>
-  </section>
-  <hr>
+                <section id="education" class="section-block">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>JUNE 2024 - PRESENT</h3>
+                        <p class="university-name">PANYAPIWAT INSTITUTE OF MANAGEMENT</p>
+                        <p>Faculty of Engineering and Technology</p>
+                        <p>Major: Digital and Information Technology</p>
+                        <p>GPAX: 2.43</p>
+                    </div>
+                </section>
 
-  <section id="about" class="resume-section">
-    <h2 class="text-border">About Me</h2>
-    <em><p>Name: KaoMao, born in Prachinburi Province, Mueang District</p></em>
-  </section>
+                <section id="skills" class="section-block">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>Blender</li>
+                        <li>3D Modeling (Blender)</li>
+                        <li>UV Mapping & Texturing</li>
+                        <li>UV Unwrap / Retopology</li>
+                        <li>Graphic Design</li>
+                        <li>Character & Outfit Design (Roblox)</li>
+                        <li>Rigging (Basic)</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Canva</li>
+                    </ul>
+                </section>
 
-  <section id="education" class="resume-section">
-    <h2 class="text-border">Education</h2>
-    <em><p>June 2024- PRESENT
-<br>PANYAPIWAT INSTITUTE OF MANAGEMENT
-<br>Faculty of Engineering and Technology
-<br>Major :Digital and Information Technology
-<br>GPAX : 2.43</p></em>
-  </section>
-
-  <section id="skills" class="resume-section">
-    <h2 class="text-border">Skills</h2>
-    <em><p>Blender
-      <br>3D Modeling (Blender)
-      <br>UV Mapping & Texturing
-      <br>UV Unwrap / Retopology
-      <br>Graphic Design
-      <br>Character & Outfit Design (Roblox)
-      <br>Rigging (Basic)
-      <br>Adobe Photoshop
-      <br>Canva
-    </p></em>
-  </section>
-
-  <section id="contact" class="resume-section">
-    <h2 class="text-border">Contact</h2>
-    <em><p>facebook<a href="https://www.facebook.com/KaMaO.zzz/">KaMao Skrc</a>
-      <br>GitHub<a href="https://github.com/sixxke-lgtm?tab=repositories">GitHub</a>
-    </p>
-    Email Kama@gmail.com
-    <br>phone 0777777777</em>
-  </section>
-
-  <!-- ✅ Toggle Menu Script -->
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
-
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
-
+                <section id="contact" class="section-block">
+                    <h2>Contact</h2>
+                    <p>Facebook: <a href="https://www.facebook.com/KaMao.Skrc" target="_blank">KaMao Skrc</a></p>
+                    <p>Github: <a href="https://github.com/sixxke-lgtm_github" target="_blank">GitHub</a></p>
+                    <p>Email: <a href="mailto:Kama@gmail.com">Kama@gmail.com</a></p>
+                    <p>Phone: 0777777777</p>
+                </section>
+            </section>
+        </main>
+    </div>
 </body>
-
-
 </html>
-
